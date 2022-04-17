@@ -1,0 +1,79 @@
+html{
+    background: #141e30; 
+background: -webkit-linear-gradient(to right, #141e30, #243b55); 
+background: linear-gradient(to right, #141e30, #243b55);
+color: white;
+text-align: center;
+}
+#wynik1{
+    position: absolute;
+    font-size: 80px;
+    text-align: center;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#wynik2{
+    position: absolute;
+    font-size: 80px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.immput:hover{
+    cursor: url('../impg/papier.png') ,auto;
+    /* cursor: url('../impg/kamien.png') ,auto; */
+    /* cursor: url('../impg/x.png') ,auto; */
+    /* cursor: url('../impg/nożyczki.png') ,auto; */
+}
+.papier{
+    cursor: url('../impg/papier.png') ,auto;
+}
+.kamien{
+    cursor: url('../impg/kamien.png') ,auto;
+}
+.nozyczki{
+    cursor: url('../impg/nożyczki.png') ,auto;
+}
+.menu-u{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    
+    transform: translate(-50%,-50%);
+}
+.menu-u button{
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+}
+h1{
+    text-align: center;
+}
+body{
+    text-align: center;
+    overflow: hidden;
+}
+#wroga-reka{
+    position: absolute;
+    /* background: url('C:/Users/Mateusz/Desktop/wszystkie foldery/programowanie/pa/test pa/impg/nozyczki-reka.png'); */
+    width: 400px;
+    height: 200px;
+    left: 80%;
+    /* na planszy przy 1200px */
+    
+}
+#twoja-reka{
+    position: absolute;
+    /* background-image: url('C:/Users/Mateusz/Desktop/wszystkie foldery/programowanie/pa/test pa/impg/kamien-reka.png'); */
+    width: 400px;
+    height: 200px;
+    left: -20px;
+    
+    transform: rotateY(180deg);
+}
+.plansa{
+    display: inline-flex;
+    height: 210px;
+}

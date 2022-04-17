@@ -1,0 +1,66 @@
+body{
+    min-height: 100vh;
+}
+.neon-button{
+    position: relative;
+    
+    padding: 10px 30px;
+    margin: 0 15px;
+    color: #00ff00;
+    background: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    transition:  0.5s;
+    border: none;
+    overflow: hidden;
+    width: 200px;
+}
+.neon-button:hover{
+    color: #111;
+    background: #00ff00;
+    box-shadow: 0 0 50px #00ff00;
+    transition-delay: 0.2s;
+}
+.neon-button:hover::before ,.neon-button:hover::after {
+    width: 100%;
+    height: 100%;
+}
+.neon-button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #00ff00;
+    border-left: 2px solid #00ff00;
+    transition:  0.5s;
+}
+.neon-button::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #00ff00;
+    border-right: 2px solid #00ff00;
+    transition:  0.5s;
+}
+
+#tu{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    display: grid;
+    grid-template-columns: 200px 200px;
+    column-gap: 15px;
+    row-gap: 15px;
+}
+#ostatnie{
+    width: 415px;
+}

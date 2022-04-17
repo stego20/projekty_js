@@ -1,0 +1,52 @@
+html{
+    background: #141e30; 
+background: -webkit-linear-gradient(to right, #141e30, #243b55); 
+background: linear-gradient(to right, #141e30, #243b55);
+color: white;
+}
+td{
+    text-align: center;
+    border: 2px solid black;
+}
+button{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border: none;
+}
+#rzuty{
+    border: 2px solid lightgrey;
+    position: absolute;
+    bottom: 10px;
+    height: 100px;
+    width: 100px;
+    font-size: 20px;
+}
+.tabela{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: scroll;
+    max-height: 300px;
+}
+.tabela::-webkit-scrollbar{
+    display: none;
+    border: 2px solid black;
+}
+#kosci{
+    position: absolute;
+    top: 86%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#kosci-w{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#kosci button{
+    
+}

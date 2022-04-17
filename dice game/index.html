@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Dice game</title>
+</head>
+<body>
+    <audio id='player' autoplay loop >
+        <source src="js/dice.mp3" type="audio/mpeg">
+      </audio>
+    <div id=kto></div>
+    <div class="plansza">
+        <div id='kosci-w'>
+            <p>kośći przeciwnika:</p>
+        <button id='1-w'></button>
+        <button id='2-w'></button>
+        <button id='3-w'></button>
+        <button id='4-w'></button>
+        <button id='5-w'></button>
+    </div>
+    <div id='kosci'>
+            <p>Twojee kośći:</p>
+        <button id='1' onclick="dodaj(1)"></button>
+        <button id='2' onclick="dodaj(2)"></button>
+        <button id='3' onclick="dodaj(3)"></button>
+        <button id='4' onclick="dodaj(4)"></button>
+        <button id='5' onclick="dodaj(5)"></button>
+        <p id='blad'></p>
+    </div>
+
+        <button onclick="rzut()" id='rzuty'>wykonaj rzut</button>
+    </div><script src="js/dice_game.js"></script>
+    <div class='tabela'>
+        
+        <table id='tabelaw'>
+            <tr>
+                <td>tury</td> <td>Punkty twoje</td> <td>Punkty przeciwnika</td> 
+            </tr>
+             
+         </table><script src="js/tabelka.js"></script>
+    </div>
+     
+      
+</body>
+</html>
